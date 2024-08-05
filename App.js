@@ -1,15 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>polshetta te suelto la hand</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -21,11 +12,9 @@ const styles = StyleSheet.create({
 
 import * as SplashScreen from 'expo-splash-screen';
 
-
 export default function App() {
 
   const [isLoading, setIsLoading] = useState(true);
-
 
   useEffect(() => {
 
@@ -40,8 +29,6 @@ export default function App() {
           // Acá hacemos todas las llamadas asincrónicas que necesitamos.
 
           // Por ejemplo precarga de Fonts, llamadas a APIs externas, etc...
-
-         
 
           // Simular una demora de 5 segundos.
 
